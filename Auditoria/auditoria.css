@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+body  {
+    font-family: Montserrat;
+    background:#000b14;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color:#000b14;
+    position: relative;
+    height: 10%;
+}
+.lista{
+    text-align: center;
+    position: relative;
+    margin-right: 15px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.lista li {
+    display: inline;
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+.lista a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f5fbff;
+}
+.lista :hover{
+    color: #016ae0;
+    cursor: pointer;
+
+}
+
+p a {    
+    text-decoration: none;
+    color: #f5fbff;
+}
+p :hover{
+    color: #000b14;
+    cursor: pointer;
+}
+
+table {
+    
+    margin-top: 30px;
+    
+    margin-left: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #5fa4b4;
+  }
+
+  th, td {
+    
+    text-align: left;
+    color: white;
+  }
+  td{
+    padding: 5px;
+  }
+  th {
+    background-color:#000b14 ;
+   
+  }
+
+  tr:nth-child(even) {
+    background-color: #406a74;
+  }
+
+
+  .tituloAuditoria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 0.9rem 2rem;
+    color: white;
+    background-color:#5fa4b4;
+    border-radius: 10px;
+    font-weight: bold;
+
+  }
+  .titulo {
+    margin-right: 1rem;
+  }
+  
+
+  .combobox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+  }
+  
+  .combobox {
+    margin-right: 1rem;
+    width: 12rem;
+    align-self: flex-start; 
+    
+  }
+  
+  .spacer {
+    flex-grow: 12; 
+  }
+
+  .button-search {
+    background-color: #406a74;
+    color: white;
+  }
+ 
+  .button-search:hover{
+    background-color: #5fa4b4;
+    color: white;
+    cursor: pointer;
+  } 

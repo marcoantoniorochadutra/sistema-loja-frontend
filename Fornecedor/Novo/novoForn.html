@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Fornecedor</title>
+  <link rel="stylesheet" href="novoForn.css">
+  
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="headerMenu">
+        <ul class="lista">
+          <li><a href="/Inicio/Fornecedor/forn.html"><img class="seta" src="/Inicio/Produto/Novo/seta-esquerda.png"> Fornecedor</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="CadastroForn">
+
+    <h2>Novo Fornecedor</h2>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>Nome</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="nome" placeholder="Digite o nome do fornecedor"></td>
+        </tr>
+        <tr>
+          <th>Apelido</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="apelido" placeholder="Digite o apelido"></td>
+        </tr>
+        <tr>
+          <th>E-mail</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="email" placeholder="Digite o E-mail"></td>
+        </tr>
+        <tr>
+          <th>Tipo</th>
+        </tr>
+        <tr>
+          <td>
+            <select name="tipo" onchange="mostrarDocumento(this.value)">
+              <option value="0">Pessoa Física</option>
+              <option value="1">Pessoa Jurídica</option>
+            </select>
+          </td>
+        </tr>
+        <tr id="cpfRow" style="display: table-row;">
+          <th>CPF</th>
+          </tr>
+          <tr id="cpfInputRow" style="display: table-row;">
+          <td><input type="text" name="cpf" placeholder="Digite o CPF"></td>
+          </tr>
+          <tr id="cnpjRow" style="display: table-row;">
+          <th>CNPJ</th>
+          </tr>
+          <tr id="cnpjInputRow" style="display: table-row;">
+          <td><input type="text" name="cnpj" placeholder="Digite o CNPJ"></td>
+          </tr>
+          
+        <tr>
+          <th>Número telefone</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="numeroTelefone" placeholder="Digite o número de telefone">
+          </td>
+        </tr>
+        <tr>
+          <th>Número Celular</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="numeroCelular" placeholder="Digite o número de Celular"></td>
+        </tr>
+        <tr>
+          <th>Ações</th>
+        </tr>
+        <tr>
+          <td class="button-cell">
+            <div class="button-container">
+              <button onclick="cadastrarFornecedor()">Cadastrar</button>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <script src="novoForn.js"></script>
+</body>
+
+</html>

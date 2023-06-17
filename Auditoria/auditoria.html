@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUTO</title>
+  <link rel="stylesheet" href="auditoria.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="headerMenu">
+        <ul class="lista">
+          <li><a href="/Inicio/index.html">DASHBOARD</a></li>
+          <li><a href="/Inicio/Produto/cadProd.html">PRODUTO</a></li>
+          <li><a href="/Inicio/Fornecedor/forn.html">FORNECEDOR</a></li>
+          <li><a href="/Inicio/Auditoria/auditoria.html">AUDITORIA</a></li>
+          <li><a href="/Inicio/Operacao/operacao.html">OPERAÇÃO</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="tituloAuditoria">
+    <div class="titulo">Auditoria</div>
+    <div class="combobox-wrapper">
+      <div>Tipo de Auditoria: </div>
+      <select id="auditoriaDrop">
+        <option value="fornecedor">Fornecedor</option>
+        <option value="operacao">Operacao</option>
+        <option value="produto">Produto</option>
+      </select>
+      <button class="listarBtn button-search" onclick="buscarAuditoria()">Buscar</button>
+    </div>
+  </div>
+
+  <table id="auditTable">
+    <thead>
+      <tr class="tituloTabela">
+        <th>Data de Alteração</th>
+        <th>ID Entidade</th>
+        <th>Nome Entidade</th>
+        <th>Tipo da Entidade</th>
+        <th>Tipo de Auditoria</th>
+      </tr>
+    </thead>
+    <tbody></tbody> 
+  </table>
+
+
+
+
+  <script src="auditoria.js"></script>
+
+  
+</body>
+
+</html>

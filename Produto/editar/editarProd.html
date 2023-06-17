@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Produto</title>
+  <link rel="stylesheet" href="editarProd.css">
+<script src="editarProd.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="headerMenu">
+        <ul class="lista">
+          <li><a href="/Inicio/Produto/cadProd.html"><img class="seta" src="/Inicio/Produto/Novo/seta-esquerda.png"> Produtos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="CadastroProd">
+
+    <h2>Editar Produto</h2>
+
+    <form id="editProductForm">
+      <table id="listaProduto">
+        <tbody>
+          <tr>
+            <th>Nome</th>
+          </tr>
+          <tr>
+            <td><input type="text" id="nome" placeholder="Digite o nome do produto"></td>
+          </tr>
+          <tr>
+            <th>Valor de Custo</th>
+          </tr>
+          <tr>
+            <td><input type="number" id="valor_custo" placeholder="Digite o valor de Custo"></td>
+          </tr>
+          <tr>
+            <th>Valor de Venda</th>
+          </tr>
+          <tr>
+            <td><input type="number" id="valor_venda" placeholder="Digite o valor de Venda"></td>
+          </tr>
+          <tr>
+            <th>Quantidade</th>
+          </tr>
+          <tr>
+            <td><input type="number" id="quantidade" placeholder="Digite a quantidade"></td>
+          </tr>
+          <tr>
+            <th>Fornecedor Cadastro Nacional</th>
+          </tr>
+          <tr>
+            <td>
+              <select id="prodDrop" name="fornecedor_cadastro_nacional" disabled>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Ações</th>
+          </tr>
+          <tr>
+            <td class="button-cell">
+              <div class="button-container">
+                <button type="submit">Atualizar</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <div id="mensagemContainer">
+    <p id="mensagemSucesso">Produto atualizado com sucesso!</p>
+  </div>
+
+ 
+</body>
+
+</html>

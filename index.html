@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCADO</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="headerMenu">
+                <ul class="lista">
+                    <li><a href="/Inicio/index.html">DASHBOARD</a></li>
+                    <li><a href="/Inicio/Produto/cadProd.html">PRODUTO</a></li>
+                    <li><a href="/Inicio/Fornecedor/forn.html">FORNECEDOR</a></li>
+                    <li><a href="/Inicio/Auditoria/auditoria.html">AUDITORIA</a></li>
+                    <li><a href="/Inicio/Operacao/operacao.html">OPERAÇÃO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="vertical-cards">
+          <div class="card">
+            <h3>Valor total em Estoque</h3>
+            <p id="vlTotalEstoque"></p>
+          </div>
+          <div class="card">
+            <h3>Lucro total em Estoque</h3>
+            <p id="lucroTotalEstoque"></p>
+          </div>
+          <div class="card">
+            <h3>Valor dos últimos sete dias</h3>
+            <p id="lucroSeteDias"></p>
+          </div>
+        </div>
+        <div class="right-card">
+            <table id="productTable">
+                <tr class="tituloTabela">
+                  <th>Nome do Produto</th>
+                  <th>Qtd. Produtos Vendidos</th>
+                </tr>
+              </table>
+        </div>
+      </div>
+
+
+</body>
+
+</html>

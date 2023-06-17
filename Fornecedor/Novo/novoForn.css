@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+body {
+  font-family: Montserrat;
+  background: #000b14;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #5fa4b4;
+  position: relative;
+  height: 45px;
+}
+
+.lista {
+  text-align: left;
+  position: relative;
+  margin-right: 15px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lista li {
+  display: inline;
+  position: relative;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+}
+
+.lista a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f5fbff;
+}
+
+.lista :hover {
+  color: #000b14;
+  cursor: pointer;
+}
+
+.seta {
+  padding-left: 5px;
+  width: 14px;
+}
+
+.CadastroForn {
+ margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+h2 {
+  margin: 130px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #5fa4b4;
+  color: white;
+}
+
+table {
+  margin: 0 auto; /* Centraliza a tabela */
+  border-collapse: collapse;
+  width: 50%; /* Reduz a largura da tabela */
+  max-width: 600px; /* Define uma largura máxima para a tabela */
+}
+th{
+    border-top: 3px solid #5fa4b4;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+ 
+}
+
+th {
+  color: white;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 80%;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: white;
+  color: #000b14;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:  #406a74;
+  color: white;
+}
+
+
+input[type="text"],
+input[type="number"] {
+  width: 80%;
+}
+
+  

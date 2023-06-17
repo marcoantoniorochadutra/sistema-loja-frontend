@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+body  {
+    font-family: Montserrat;
+    background:#000b14;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color:#000b14;
+    position: relative;
+    height: 10%;
+}
+.lista{
+    text-align: center;
+    position: relative;
+    margin-right: 15px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.lista li {
+    display: inline;
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+.lista a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f5fbff;
+}
+.lista :hover{
+    color: #016ae0;
+    cursor: pointer;
+
+}
+
+.semana, .lucro {
+    background-color: #5fa4b4;
+    margin: 15px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 0px 7px 7px 7px;
+}
+
+.semana {
+    background-color: #5fa4b4;
+    margin: 15px;
+    margin-top: 20px;
+    width: 300px;
+    height: 100px; 
+    display: inline-block;
+    border-radius: 0px 7px 7px 7px;
+}
+.lucro{
+    height: 100px;
+    width: 300px;
+}
+
+
+.semana, .lucro{
+    background-color:#5fa4b4;
+    margin: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius:0px 7px 7px 7px ; 
+}
+#numeroEstoque, .nomeProduto{ 
+    margin-left: 10px;
+    color: white
+    
+
+}
+.nomeProduto {
+    width: 300px;
+  
+  }
+
+.maisVendido, .produtoMaiorValor{
+    margin-left: 10px;
+    color: white;
+}
+
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    display: flex;
+  }
+  
+  .vertical-cards {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .vertical-cards .card {
+    background-color: #5fa4b4;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .right-card {
+    flex: 1;
+    padding: 10px;
+  }
+
+  table {    
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #5fa4b4;
+  }
+
+  th, td {    
+    text-align: left;
+    color: white;
+  }
+  td{
+    padding: 5px;
+  }
+  th {
+    background-color:#000b14 ;
+   
+  }
+
+  tr:nth-child(even) {
+    background-color: #406a74;
+  }
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  p {
+    color: #000b14;
+    font-size: 20px;
+    font-weight: bold;
+  }

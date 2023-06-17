@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Produto</title>
+  <link rel="stylesheet" href="novoProd.css">
+  <script src="novoProd.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="headerMenu">
+        <ul class="lista">
+          <li><a href="/Inicio/Produto/cadProd.html"><img class="seta" src="seta-esquerda.png"> Produtos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="CadastroProd">
+
+    <h2>Novo Produto</h2>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>Nome</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="nome" placeholder="Digite o nome do produto"></td>
+        </tr>
+        <tr>
+          <th>Valor de Custo</th>
+        </tr>
+        <tr>
+          <td><input type="number" name="valor_custo" placeholder="Digite o valor de Custo"></td>
+        </tr>
+        <tr>
+          <th>Valor de Venda</th>
+        </tr>
+        <tr>
+          <td><input type="number" name="valor_venda" placeholder="Digite o valor de Venda"></td>
+        </tr>
+        <tr>
+          <th>Quantidade</th>
+        </tr>
+        <tr>
+          <td><input type="number" name="quantidade" placeholder="Digite a quantidade"></td>
+        </tr>
+        <tr>
+          <th>Fornecedor Cadastro Nacional</th>
+        </tr>
+        <tr>
+          <td>
+            <select id="fornecedorDrop" name="fornecedor_cadastro_nacional">
+              <option value="">Selecione um fornecedor</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Ações</th>
+          <tr>
+            <tr>
+              <td class="button-cell">
+                <div class="button-container">
+                  <button onclick="cadastrarProduto()">Cadastrar</button>
+                </div>
+              </td>
+            </tr>
+            
+          
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>

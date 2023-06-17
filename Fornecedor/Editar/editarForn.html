@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Fornecedor</title>
+  <link rel="stylesheet" href="editarForn.css">
+  <script src="editarForn.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="headerMenu">
+        <ul class="lista">
+          <li><a href="/Inicio/Fornecedor/forn.html"><img class="seta" src="/Inicio/Produto/Novo/seta-esquerda.png"> Fornecedor</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="CadastroProd">
+    <h2>Editar Fornecedor</h2>
+
+    <form id="editFornecedorForm">
+      <table id="listaFornecedor">
+        <tbody>
+          <tr>
+            <th>Nome</th>
+          </tr>
+          <tr>
+            <td><input type="text" id="nome" placeholder="Digite o nome do fornecedor"></td>
+          </tr>
+          <tr>
+            <th>Apelido</th>
+          </tr>
+          <tr>
+            <td><input type="text" id="apelido" placeholder="Digite o apelido do fornecedor"></td>
+          </tr>
+          <tr>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td><input type="email" id="email" placeholder="Digite o email do fornecedor"></td>
+          </tr>
+          <th>Tipo</th>
+        </tr>
+        <tr>
+          <td>
+            <select name="tipo" onchange="mostrarDocumento(this.value)">
+              <option value="0">Pessoa Física</option>
+              <option value="1">Pessoa Jurídica</option>
+            </select>
+          </td>
+        </tr>
+        <tr id="cpfRow" style="display: table-row;">
+          <th>CPF</th>
+          </tr>
+          <tr id="cpfInputRow" style="display: table-row;">
+          <td><input type="text" name="cpf" placeholder="Digite o CPF"></td>
+          </tr>
+          <tr id="cnpjRow" style="display: table-row;">
+          <th>CNPJ</th>
+          </tr>
+          <tr id="cnpjInputRow" style="display: table-row;">
+          <td><input type="text" name="cnpj" placeholder="Digite o CNPJ"></td>
+          </tr>
+          <tr>
+            <th>Número de Telefone</th>
+          </tr>
+          <tr>
+            <td><input type="tel" id="telefone" placeholder="Digite o número de telefone do fornecedor"></td>
+          </tr>
+          <tr>
+            <th>Número de Celular</th>
+          </tr>
+          <tr>
+            <td><input type="tel" id="celular" placeholder="Digite o número de celular do fornecedor"></td>
+          </tr>
+          <tr>
+            <th>Ações</th>
+          </tr>
+          <tr>
+            <td class="button-cell">
+              <div class="button-container">
+                <button type="submit">Atualizar</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <div id="mensagemContainer">
+    <p id="mensagemSucesso">Fornecedor atualizado com sucesso!</p>
+  </div>
+
+</body>
+
+</html>
